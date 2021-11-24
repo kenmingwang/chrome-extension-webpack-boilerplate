@@ -25,9 +25,9 @@ All your extension's development code must be placed in `src` folder, including 
 
 The boilerplate is already prepared to have a popup, a options page and a background page. You can easily customize this.
 
-Each page has its own [assets package defined](https://github.com/samuelsimoes/chrome-extension-webpack-boilerplate/blob/master/webpack.config.js#L16-L20). So, to code on popup you must start your code on `src/js/popup.js`, for example.
+Each page has its own [assets package defined](https://github.com/samuelsimoes/azusa-player-boilerplate/blob/master/webpack.config.js#L16-L20). So, to code on popup you must start your code on `src/js/popup.js`, for example.
 
-You must use the [ES6 modules](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/import) to a better code organization. The boilerplate is already prepared to that and [here you have a little example](https://github.com/samuelsimoes/chrome-extension-webpack-boilerplate/blob/master/src/js/popup.js#L2-L4).
+You must use the [ES6 modules](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/import) to a better code organization. The boilerplate is already prepared to that and [here you have a little example](https://github.com/samuelsimoes/azusa-player-boilerplate/blob/master/src/js/popup.js#L2-L4).
 
 ## Webpack auto-reload and HRM
 To make your workflow much more efficient this boilerplate uses the [webpack server](https://webpack.github.io/docs/webpack-dev-server.html) to development (started with `npm run server`) with auto reload feature that reloads the browser automatically every time that you save some file o your editor.
@@ -40,7 +40,7 @@ $ PORT=6002 npm run start
 
 ## Content Scripts
 
-Although this boilerplate uses the webpack dev server, it's also prepared to write all your bundles files on the disk at every code change, so you can point, on your extension manifest, to your bundles that you want to use as [content scripts](https://developer.chrome.com/extensions/content_scripts), but you need to exclude these entry points from hot reloading [(why?)](https://github.com/samuelsimoes/chrome-extension-webpack-boilerplate/issues/4#issuecomment-261788690). To do so you need to expose which entry points are content scripts on the `webpack.config.js` using the `chromeExtensionBoilerplate -> notHotReload` config. Look the example below.
+Although this boilerplate uses the webpack dev server, it's also prepared to write all your bundles files on the disk at every code change, so you can point, on your extension manifest, to your bundles that you want to use as [content scripts](https://developer.chrome.com/extensions/content_scripts), but you need to exclude these entry points from hot reloading [(why?)](https://github.com/samuelsimoes/azusa-player-boilerplate/issues/4#issuecomment-261788690). To do so you need to expose which entry points are content scripts on the `webpack.config.js` using the `chromeExtensionBoilerplate -> notHotReload` config. Look the example below.
 
 Let's say that you want use the `myContentScript` entry point as content script, so on your `webpack.config.js` you will configure the entry point and exclude it from hot reloading, like this:
 
@@ -99,7 +99,7 @@ ApiCall({ key: secrets.key });
 :point_right: The files with name `secrets.*.js` already are ignored on the repository.
 
 ## With React.js
-:bulb: If you want use [React.js](https://facebook.github.io/react/) with this boilerplate, check the **[react branch](https://github.com/samuelsimoes/chrome-extension-webpack-boilerplate/tree/react)**.
+:bulb: If you want use [React.js](https://facebook.github.io/react/) with this boilerplate, check the **[react branch](https://github.com/samuelsimoes/azusa-player-boilerplate/tree/react)**.
 
 
 ## Contributing
